@@ -15,7 +15,7 @@ def vibor_sort(a):
         for j in range(i + 1, len(a)):
             if a[j] < a[imin]:
                 imin = j
-            a[i], a[imin] = a[imin], a[i]
+        a[i], a[imin] = a[imin], a[i]
 def quick_sort(a):
     if len(a) <= 1:
         return(a)
